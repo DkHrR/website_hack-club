@@ -68,3 +68,11 @@ a {
      
 
 }
+
+.right-images {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    
+
+}
