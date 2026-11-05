@@ -42,11 +42,12 @@ input {
     background-color: #2a2a33;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 100px;
     padding: 14px;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 20%;
+    height: auto;
 
 }
 
@@ -65,14 +66,47 @@ a {
 
 .terms {
     text-align: center;
-     
+}
 
+.images {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    box-sizing:border-box
 }
 
 .right-images {
     display: flex;
-    align-items: right;
-    justify-content: right;
-    
-
+    flex-direction:column;
 }
+
+.left-images {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.right-images {
+    align-items: flex-end;
+}
+
+.nav-bar {
+    text-decoration:none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+
