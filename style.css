@@ -10,17 +10,43 @@ h1 {
     text-align: center;
     font-size: 50px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
+.center-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    padding: 0 40px;   
+    margin-top: 50px;
+}     
+
 
 .welcome {
+    font-family: 'Fraunces', serif;
     color: #ffffff;
     text-align: center;
     font-size: 80px;
 }
 
+.welcome p {
+     margin-bottom: 10px;
+}
+
 .description {
     text-align: center;
+    margin-top: 0px;
+}
+
+.description p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.description p br {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .email button {
@@ -28,13 +54,11 @@ h1 {
     color: black;
     border: none;
     padding: 10px;
-    border-radius: 6px;
-    width: 10%;
+    border-radius: 20px;
+    width: 120px;
     cursor: pointer;
+    height: 50px;
     transition: background-color 0.6s ease;
-
-
-
 }
 
 .email button:hover {
@@ -49,8 +73,8 @@ input {
     padding: 14px;
     align-items: center;
     justify-content: center;
-    width: 20%;
-    height: auto;
+    width: 300px;
+    height: 24px;
 
 }
 
@@ -142,4 +166,35 @@ input {
 .navdiv button a:hover{
     background-color: red;
 }
+
+span.gradient {
+    margin-bottom: 0px;
+    background: linear-gradient(
+        to right,
+        rgb(250, 78, 10),
+        rgb(247, 12, 204),
+        rgb(0, 106, 255),
+        rgb(48, 248 ,255),
+        rgb(250, 78, 10)
+    );
+    background-clip: text;
+    color:transparent;
+    background-size: 200% auto;
+    animation: gradientAnimation 3s linear infinite;
+}
+
+@keyframes gradientAnimation{
+    0%{
+        background-position: 200% 50%;
+
+
+    }
+    100%{
+        background-position: 0% 50%;
+        
+
+
+    }
+}
+
 
